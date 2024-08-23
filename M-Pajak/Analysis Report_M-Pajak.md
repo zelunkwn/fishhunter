@@ -21,7 +21,7 @@ What is GoldDigger?
 >![image](https://github.com/user-attachments/assets/57f64dd8-e5dd-4087-af50-903ee542061d)
 
 "Allows apps to manage device administration features." is something you dont want to do.
-AND it requires you to BIND with the system, theres no apps that will ask you to requires you to bind them with the system unless they wanted to scrap all you PII and SPII
+AND it requires you to BIND with the system, theres no apps that will ask you to requires you to bind them with the system unless they wanted to scrap all your PII and SPII
 
 What happened if the "unlucky" you installed the .apk?
 well...
