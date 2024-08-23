@@ -1,12 +1,12 @@
 https://djp.krgo.cc :warning:
-![image](https://github.com/user-attachments/assets/62fcf751-5c00-4f3e-83ef-1e1c9c8a7684)
+>![image](https://github.com/user-attachments/assets/62fcf751-5c00-4f3e-83ef-1e1c9c8a7684)
 
 This website will provide you with fake M-Pajak.apk
 
 M-Pajak.apk (djp.krgo.cc) analysis report :
-![image](https://github.com/user-attachments/assets/7f37b81f-4d8d-4c00-8f1b-6db03f0172a9)
+>![image](https://github.com/user-attachments/assets/7f37b81f-4d8d-4c00-8f1b-6db03f0172a9)
 
-![image](https://github.com/user-attachments/assets/11d49ee8-9933-4544-828c-a3663c3e7e9b)
+>![image](https://github.com/user-attachments/assets/11d49ee8-9933-4544-828c-a3663c3e7e9b)
 
 
 What is GoldDigger?
@@ -18,14 +18,14 @@ What is GoldDigger?
 >It monitors and extracts data from 51 financial apps, e-wallets, and crypto apps in Vietnam, sending it to command-and-control servers. While the full extent of its capabilities is not confirmed, it poses significant risks, including authentication bypass and remote access.[^1].
 
 >So, is it dangerous? Yes, very dangerous
-![image](https://github.com/user-attachments/assets/57f64dd8-e5dd-4087-af50-903ee542061d)
+>![image](https://github.com/user-attachments/assets/57f64dd8-e5dd-4087-af50-903ee542061d)
 
 "Allows apps to manage device administration features." is something you dont want to do.
 AND it requires you to BIND with the system, theres no apps that will ask you to requires you to bind them with the system unless they wanted to scrap all you PII and SPII
 
 What happened if the "unlucky" you installed the .apk?
 well...
-![image](https://github.com/user-attachments/assets/5ab8aec3-3f4a-40cc-9285-ac1a8354bc91)
+>![image](https://github.com/user-attachments/assets/5ab8aec3-3f4a-40cc-9285-ac1a8354bc91)
 
 ---
 
