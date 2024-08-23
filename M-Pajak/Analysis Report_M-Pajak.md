@@ -31,7 +31,7 @@ well...
 
 This is a simple documentation about M-Pajak.apk (djp.krgo.cc)
 Original M-Pajak.apk can be found [here](https://play.google.com/store/apps/details?id=id.go.pajak.djp&hl=id).
-
+More complete report can be found [here](https://drive.google.com/drive/folders/1mB6qra9Bnr2w3W3CGE0TwDWze_w7NNf-?usp=sharing)
 [^1]:[pcrisk](https://www.pcrisk.com/removal-guides/27995-golddigger-trojan-android#:~:text=GoldDigger%20is%20an%20Android%20Trojan,since%20at%20least%20June%202023).
 
 
