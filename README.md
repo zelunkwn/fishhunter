@@ -3,7 +3,7 @@ This is a repo for analyze result of phising , malware , scam that found in Indo
 
 ---
 
-##Tools that used
+## ools that used
 1. [IDA FREEWARE](https://hex-rays.com/products/ida/news/8_4/)
 --1. [7 Zip](https://www.7-zip.org)
 2. [CFF Explorer](https://ntcore.com/explorer-suite/)
@@ -14,12 +14,12 @@ This is a repo for analyze result of phising , malware , scam that found in Indo
 
 ---
 
-##Where to report
+## here to report
 [Phising](https://phish.report/)
 
 ---
 
-##Important Website
+## Important Website
 [Tri.age](https://tria.ge)
 [Phising Report](https://phish.report/)
 
