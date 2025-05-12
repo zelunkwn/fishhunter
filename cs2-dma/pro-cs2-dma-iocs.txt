@@ -1,0 +1,10 @@
+
+# URLs
+https://raw.githubusercontent.com/a2x/cs2-dumper/main/output/info.json
+https://github.com/Enoouo/Pro-CS2_DMA
+
+# Suspicious Strings
+"Memory encryption detected"
+"password"
+"CryptEncrypt"
+"GetAsyncKeyState"
