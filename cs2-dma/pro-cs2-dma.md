@@ -2,7 +2,6 @@
 
 ## 📌 Summary
 - **File name:** `pro cs2.exe`
-- **SHA-256:** `[your hash here]`
 - **Type:** PE64 Windows Console Application
 - **Compiler:** MSVC++ (Visual Studio 2022)
 - **Purpose:** DMA cheat loader for CS2
