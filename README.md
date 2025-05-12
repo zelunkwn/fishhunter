@@ -5,7 +5,8 @@ Welcome to **fishhunter**, my personal malware research portfolio.
 Here, I investigate cheat binaries, malware, and suspicious executables using tools and static/dynamic analysis. This repo contains reverse engineering notes, threat indicators, YARA rules, and behavioral breakdowns.
 
 ## 📂 Contents
-- [`pro-cs2-dma/`](./pro-cs2-dma) — Analysis of a CS2 cheat loader with cryptographic & obfuscation behaviors.
+- [`pro-cs2-dma.exe/`](./pro-cs2-dma) — Analysis of a CS2 cheat loader with cryptographic & obfuscation behaviors.
+- [`m-pajak.com`](./m-pajak) - Analysis of a fake m-pajak link and its malware .apk.
 
 ## 🔧 Tools I Use
 - IDA Free
