@@ -1,20 +1,24 @@
-# fishhunter 🪝
-This is a repo for analyze result of phising , malware , scam that found in Indonesia
+# 🐟 fishhunter — Malware & Cheat Binary Analysis
+
+Welcome to **fishhunter**, my personal malware research portfolio.
+
+Here, I investigate cheat binaries, malware, and suspicious executables using tools and static/dynamic analysis. This repo contains reverse engineering notes, threat indicators, YARA rules, and behavioral breakdowns.
+
+## 📂 Contents
+- [`pro-cs2-dma/`](./pro-cs2-dma) — Analysis of a CS2 cheat loader with cryptographic & obfuscation behaviors.
+
+## 🔧 Tools I Use
+- IDA Free
+- Detect It Easy (DIE)
+- PE-bear, CFF Explorer
+- YARA, VT, HybridAnalysis, Any.Run
+- dnspy
+- x64dbg
+- vmware/vbox
 
 ---
 
-## Tools that used
-1. [IDA FREEWARE](https://hex-rays.com/products/ida/news/8_4/)
-2. [7 Zip](https://www.7-zip.org)
-3. [CFF Explorer](https://ntcore.com/explorer-suite/)
-4. [dnSpy](https://github.com/dnSpyEx/dnSpy/releases/tag/v6.5.1)
-5. [x64dbg](https://x64dbg.com)
-6. [Vmware](https://www.vmware.com)
-7. [VirtualBox](https://www.virtualbox.org)
-
----
-
-## here to report
+## here to manualy report any phising link that you've found in the internet!
 [Phising](https://phish.report/)
 
 ---
