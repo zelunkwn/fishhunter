@@ -11,7 +11,7 @@ This analysis covers a fake version of the BRImo.apk, impersonating the legitima
 - **SHA-256:** `013C8C4518012386F419E4CCA1E78B3F09D3E87B290E87E4093A92BD6ED1175D`
 - **Package Name:** `com.smodj.app.smstotelegram`
 - **Size:** ~5MB (exact size may vary)
-- **Detection:** Detected as **Malicious** by SecureAge A/V on VirusTotal
+- **Detection:** Manual Detection using Tools.
 
 ---
 
