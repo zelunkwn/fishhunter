@@ -79,8 +79,6 @@ public class MainConstant {
     }
 
 ```
-
-Heres the funny part
 ![image](https://github.com/user-attachments/assets/2ca5c1ee-d559-42a5-b2d4-b4b7105d6ea0)
 ![image](https://github.com/user-attachments/assets/917e264c-67f3-4091-9fd4-82d0f284d64a)
 ![image](https://github.com/user-attachments/assets/2290d52c-5533-4c87-ac05-c2ec298f9fe6)
