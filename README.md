@@ -7,6 +7,7 @@ Here, I investigate cheat binaries, malware, and suspicious executables using to
 ## 📂 Contents
 - [`pro-cs2-dma.exe/`](./pro-cs2-dma) — Analysis of a CS2 cheat loader with cryptographic & obfuscation behaviors.
 - [`m-pajak.com/`](./M-Pajak) - Analysis of a fake m-pajak link and its malware .apk.
+- [`BRImo/`](./BRImo) - Analysis of a fake BRI Mobile .apk.
 
 ## 🔧 Tools I Use
 - IDA Free
